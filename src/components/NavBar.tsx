@@ -113,25 +113,25 @@ function NavBar() {
     <div className="relative">
       <Dock direction="middle">
         <DockIcon>
-          <Icons.Mail />
+          <Icons.Mail className="size-5" />
         </DockIcon>
         <DockIcon>
-          <Icons.Linkedin className="size-6" />
+          <Icons.Linkedin className="size-5" />
         </DockIcon>
         <DockIcon>
-          <Icons.GitHub className="size-6" />
+          <Icons.GitHub className="size-5" />
         </DockIcon>
         <DockIcon>
-          <Icons.Home />
+          <Icons.Home className="size-5" />
         </DockIcon>
         <DockIcon>
-          <Icons.Experience />
+          <Icons.Experience className="size-5" />
         </DockIcon>
         <DockIcon>
-          <Icons.Skills />
+          <Icons.Skills className="size-5" />
         </DockIcon>
         <DockIcon>
-          <Icons.Projects />
+          <Icons.Projects className="size-5" />
         </DockIcon>
       </Dock>
     </div>

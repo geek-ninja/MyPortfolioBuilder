@@ -1,8 +1,5 @@
-import DotPattern from '../../components/DotPattern'
-import Meteors from '../../components/Meteors'
 import SparklesText from '../../components/SparklesText'
 import WordRotate from '../../components/WordRotate'
-import { cn } from '../../utils'
 import ProfilePic from '../../static/img/myAvatar.jpg'
 import { NeonGradientCard } from '../../components/NeonGradientCard'
 import profileData from "../../data/profile.json"
@@ -10,28 +7,7 @@ import profileData from "../../data/profile.json"
 function Banner() {
     return (
         <div className="relative flex h-screen w-full flex-col items-center justify-center overflow-hidden bg-background">
-            <Meteors number={30} />
-            <DotPattern
-                width={20}
-                height={20}
-                cx={1}
-                cy={1}
-                cr={1}
-                className={cn(
-                    "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] ",
-                )}
-            />
-            <DotPattern
-                width={20}
-                height={20}
-                cx={1}
-                cy={1}
-                cr={1}
-                className={cn(
-                    "[mask-image:linear-gradient(to_top_left,white,transparent,transparent)] ",
-                )}
-            />
-            <div className="w-full flex flex-wrap items-center justify-evenly">
+            <div className="w-full mb-8 flex flex-wrap items-center justify-evenly">
                 <div className="flex-[0.6] text-center sm:text-center md:text-left lg:text-left xl:text-left 2xl:text-left">
                     <span className="flex text-4xl sm:text-4xl md:text-6xl lg:text-6xl xl:text-8xl 2xl:text-8xl font-semibold text-gray-700 dark:text-gray-200">
                         {profileData.firstName}&nbsp;
