@@ -1,6 +1,77 @@
 {
     "firstName":"Sanket",
-    "lastName":"Puhan",
+    "lastName":"Puhan..",
     "designation":"Software Developer",
-    "smallSummary":"I like to craft solid and scalable full stack products with great user experiences."
+    "smallSummary":"I like to craft solid and scalable full stack products with great user experiences.",
+    "social":{
+      "gmail":"mailto:sanketpuhan7@gmail.com",
+      "linkedIn":"https://www.linkedin.com/in/sanket-puhan/",
+      "github":"https://github.com/geek-ninja"
+    },
+    "experience":[
+        "Optimized program performance by analyzing and modifying code, resulting in a 25% improvement in application performance, a 30% reduction in downtime, a 25% decrease in system errors, and a 70% boost in processing efficiency.",
+        "Designed efficient database structures to enhance data security and storage, leading to a 50% increase in the effectiveness of targeted strategies.",
+        "Enhanced code quality by debugging errors, adding comments, and creating reusable functions, which improved code readability by 50% and reduced resolution time by 15%.",
+        "Engineered cloud functions to convert and transfer over 10,000 Elasticsearch documents into Google BigQuery tables, improving data accessibility and analysis capabilities, and enabling SQL query functionality for better client insights.",
+        "Engineered and maintained front-end and back-end solutions enhancing user experience for over 1,000 active users with React.js, integrated RESTful APIs with Angular, and created secure backend APIs with Node.js and Python, boosting processing efficiency by 30%."
+    ],
+    "projects":[
+      {
+        "slNo":1,
+        "name":"Movie App",
+        "className": "col-span-3 lg:col-span-1",
+        "cta":"Learn more",
+        "description":"Developed a React Native app with Movies API services, enabling users to explore movies on various genere with cool animation",
+        "projectImg":"https://github.com/geek-ninja/React-Native-Movie-App/raw/main/appDemo.gif",
+        "href":"https://github.com/geek-ninja/React-Native-Movie-App"
+
+      },
+      {
+        "slNo":2,
+        "name":"Stocks Trading Web",
+        "className": "col-span-3 lg:col-span-2",
+        "cta":"Learn more",
+        "description":"Developed a Virtual Stock Trading Web Application with Angular for the frontend and Node.js with Express for the backend, implementing features such as stock detail searches, buying, selling, portfolio and watchlist management, and price.",
+        "projectImg":"https://github.com/geek-ninja/stocks-trading-angular/raw/main/other/demo-lg.gif",
+        "href":"https://github.com/geek-ninja/stocks-trading-angular"
+      },
+      {
+        "slNo":3,
+        "name":"MERN-library-management",
+        "className": "col-span-3 lg:col-span-2",
+        "cta":"Learn more",
+        "description":"Built a MERN stack project using React, Redux, and Material UI, resulting in a user-friendly interface for managing over 100 books and performing various actions with a responsive design.",
+        "projectImg":"https://github.com/geek-ninja/MERN-library-management/raw/main/home.png",
+        "href":"https://github.com/geek-ninja/MERN-library-management"
+      },
+      {
+        "slNo":4,
+        "name":"Map Navigator",
+        "className": "col-span-3 lg:col-span-1",
+        "cta":"Learn more",
+        "description":"Developed a React Native app with Google Cloud Platform services, enabling users to select locations, view directions on a responsive MapView, and track real-time location with updates every 5 seconds.",
+        "projectImg":"https://github.com/geek-ninja/uber_app_clone/raw/main/uberClone.gif",
+        "href":"https://github.com/geek-ninja/uber_app_clone"
+      },
+      {
+        "slNo":5,
+        "name":"Discord Music Bot",
+        "className": "col-span-3 lg:col-span-1",
+        "cta":"Learn more",
+        "description":"Created a Discord Music Bot using Python, enabling users to search for and play music from YouTube directly in voice channels, with response times under 2 seconds for fetching and playing songs.",
+        "projectImg":"https://github.com/geek-ninja/discord-music-bot/raw/main/bot.png",
+        "href":"https://github.com/geek-ninja/discord-music-bot"
+
+      },
+      {
+        "slNo":6,
+        "name":"Covid-19 Tracker",
+        "className": "col-span-3 lg:col-span-2",
+        "cta":"Learn more",
+        "description":"This is a reactJs based project.This project uses (disease.sh)API to get the records related to the covid-19 cases and display using reactJs.This website is hosted using firebase service.",
+        "projectImg":"https://bsmedia.business-standard.com/_media/bs/img/article/2020-03/16/full/1584333710-2299.jpg",
+        "href":"https://covid-tracker-204df.web.app/"
+      }
+    ]
+      
 }

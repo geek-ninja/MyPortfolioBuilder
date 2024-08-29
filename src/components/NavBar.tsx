@@ -1,5 +1,7 @@
-import { HomeIcon, MailIcon, BriefcaseBusiness, FolderCog, Lightbulb } from "lucide-react";
+import { HomeIcon, MailIcon, BriefcaseBusiness, FolderCog, Lightbulb, Sun, Moon } from "lucide-react";
+import { ThemeContext } from "../App";
 import { Dock, DockIcon } from "./Dock";
+import { useContext } from "react";
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 const Icons = {
@@ -106,32 +108,51 @@ const Icons = {
   Skills: (props: IconProps) => <Lightbulb {...props} />,
   Experience: (props: IconProps) => <BriefcaseBusiness {...props} />,
   Projects: (props: IconProps) => <FolderCog {...props} />,
+  Sun: (props: IconProps) => <Sun {...props} />,
+  Moon: (props: IconProps) => <Moon {...props} />,
+
 };
 
-function NavBar() {
+interface ThemeProps {
+  isDark?: boolean;
+}
+
+const NavBar: React.FC<ThemeProps> = () => {
+
+  const [dark, setDark] = useContext(ThemeContext);
+
+  const darkModeHandler = () => {
+    setDark(!dark);
+    document.body.classList.toggle("dark");
+  };
+
   return (
-    <div className="relative">
+    <div className="fixed w-full z-10 mt-6 mb-4">
       <Dock direction="middle">
         <DockIcon>
-          <Icons.Mail className="size-5" />
+          <a href="#home">
+            <Icons.Home className="size-5" />
+          </a>
         </DockIcon>
         <DockIcon>
-          <Icons.Linkedin className="size-5" />
+          <a href="#experience">
+            <Icons.Experience className="size-5" />
+          </a>
         </DockIcon>
         <DockIcon>
-          <Icons.GitHub className="size-5" />
+          <a href="#skills">
+            <Icons.Skills className="size-5" />
+          </a>
         </DockIcon>
         <DockIcon>
-          <Icons.Home className="size-5" />
+          <a href="#projects">
+            <Icons.Projects className="size-5" />
+          </a>
         </DockIcon>
         <DockIcon>
-          <Icons.Experience className="size-5" />
-        </DockIcon>
-        <DockIcon>
-          <Icons.Skills className="size-5" />
-        </DockIcon>
-        <DockIcon>
-          <Icons.Projects className="size-5" />
+          {
+            !dark ? <Icons.Moon onClick={() => darkModeHandler()} className="size-5" /> : <Icons.Sun onClick={() => darkModeHandler()} className="size-5" />
+          }
         </DockIcon>
       </Dock>
     </div>
